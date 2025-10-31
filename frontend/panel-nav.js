@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    fetch('../panel-nav.html') // Make sure this matches your file name
+    fetch('panel-nav.html') // Make sure this matches your file name
         .then(response => response.text())
         .then(data => {
             document.getElementById('panel-bar-placeholder').innerHTML = data;
@@ -18,5 +18,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .catch(error => console.error('Error loading panel bar:', error));
 });
+
 
 
